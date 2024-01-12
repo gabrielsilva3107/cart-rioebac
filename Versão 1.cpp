@@ -130,6 +130,7 @@ int main()
     		printf("\t1 - Gravar cliente\n");
     		printf("\t2 - Consultar cliente\n");
     		printf("\t3 - Deletar cliente\n");
+    		printf("\t4 - Encerrar programa\n\n");
     		printf("Opção: "); //Fim do menu
 		
     		scanf("%d", &opcao); //Armazenando a seleção
@@ -150,6 +151,11 @@ int main()
 		    	case 3:
     			deletar();
     			break;
+    			
+	    		case 4:
+	    		printf("Obrigado por utilizar o programa!\n");
+	    		return 0;
+	    		break;
 			
 		    	default:
 	    		printf("Essa opção não está disponível!\n");
@@ -157,5 +163,6 @@ int main()
 	    		break;
 	    	} //fim da seleção
     	}
+    }
 
 }
